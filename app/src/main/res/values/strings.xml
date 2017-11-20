@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">Culinar</string>
+    /* COMMON PAGE */
+    <string name="hintCulinar">Search Culinar</string>
+    <string name="title_activity_curtner">CurtnerActivity</string>
+    <string name="buttonSearch">Search</string>
+
+    /* SCREEN CURTNER */
+    <string name="textSearch">Curtners</string>
+
+    /* SCREEN FOODS */
+
+    /* SCREEN PRE-ORDER DETAIL */
+
+    /* SCREEN ORDER WAITING */
+
+    /* SCREEN INFO */
+
 </resources>
