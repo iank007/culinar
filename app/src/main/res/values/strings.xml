@@ -7,6 +7,9 @@
 
     /* SCREEN CURTNER */
     <string name="textSearch">Curtners</string>
+    <string name="textId">CID: </string>
+    <string name="textStore">Store : </string>
+    <string name="textStatus">Status : </string>
 
     /* SCREEN FOODS */
 
