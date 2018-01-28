@@ -18,6 +18,7 @@
         </activity>
         <activity android:name=".SingleItemView" />
         <activity android:name=".SummaryView" />
+        <activity android:name=".CurtnerMain" />
     </application>
 
 </manifest>

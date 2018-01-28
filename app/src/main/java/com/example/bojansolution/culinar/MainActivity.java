@@ -1,9 +1,11 @@
 package com.example.bojansolution.culinar;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.ListView;
 
@@ -63,5 +65,10 @@ public class MainActivity extends AppCompatActivity {
                 adapter.filter(text);
             }
         });
+    }
+
+    public void curtner(View view) {
+        Intent intent = new Intent(this, CurtnerMain.class);
+        startActivity(intent);
     }
 }
