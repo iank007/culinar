@@ -1,9 +1,11 @@
-package com.example.bojansolution.culinar;
+package com.example.bojansolution.culinar.View;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
+
+import com.example.bojansolution.culinar.R;
 
 /**
  * Created by bojan solution on 31/12/2017.

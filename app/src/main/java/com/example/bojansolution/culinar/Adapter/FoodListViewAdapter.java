@@ -1,4 +1,4 @@
-package com.example.bojansolution.culinar;
+package com.example.bojansolution.culinar.Adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.example.bojansolution.culinar.R;
 import com.example.bojansolution.culinar.model.FoodPopulation;
 
 import java.util.List;

@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ListView;
 
+import com.example.bojansolution.culinar.Adapter.StoreListViewAdapter;
 import com.example.bojansolution.culinar.model.StorePopulation;
 
 import java.util.ArrayList;

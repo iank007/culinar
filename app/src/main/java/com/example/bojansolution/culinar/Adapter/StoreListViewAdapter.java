@@ -1,4 +1,4 @@
-package com.example.bojansolution.culinar;
+package com.example.bojansolution.culinar.Adapter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -8,6 +8,8 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
+import com.example.bojansolution.culinar.R;
+import com.example.bojansolution.culinar.View.SingleItemView;
 import com.example.bojansolution.culinar.model.StorePopulation;
 
 import java.util.ArrayList;

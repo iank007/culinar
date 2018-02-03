@@ -6,6 +6,8 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
+import com.example.bojansolution.culinar.Adapter.CurtnerPagerAdapter;
+
 /**
  * Created by bojan solution on 28/01/2018.
  */

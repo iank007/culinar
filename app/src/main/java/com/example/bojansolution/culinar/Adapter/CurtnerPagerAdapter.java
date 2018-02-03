@@ -1,8 +1,13 @@
-package com.example.bojansolution.culinar;
+package com.example.bojansolution.culinar.Adapter;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
+
+import com.example.bojansolution.culinar.CurtnerFragment1;
+import com.example.bojansolution.culinar.CurtnerFragment2;
+import com.example.bojansolution.culinar.CurtnerFragment3;
+import com.example.bojansolution.culinar.CurtnerFragment4;
 
 /**
  * Created by bojan solution on 28/01/2018.
