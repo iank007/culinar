@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "568750902381-4njope1mtn0v5jpbn0b1u2i490fm63sg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bojansolution.culinar",
+            "certificate_hash": "8f9f67bea5c97d5d898a5d9c2a3d902fca7b9a62"
+          }
+        },
+        {
           "client_id": "568750902381-89gm9tspuc96utrd5clni0aavuum8gfa.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "568750902381-89gm9tspuc96utrd5clni0aavuum8gfa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2

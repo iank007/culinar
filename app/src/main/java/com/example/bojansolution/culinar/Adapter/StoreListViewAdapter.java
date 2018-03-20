@@ -35,6 +35,10 @@ public class StoreListViewAdapter extends BaseAdapter {
         this.storePopulationArrayList.addAll(storePopulations);
     }
 
+    public void addChild(StorePopulation sp) {
+        storePopulations.add(sp);
+    }
+
     public class ViewHolder {
         TextView textStoreId;
         TextView textStoreName;

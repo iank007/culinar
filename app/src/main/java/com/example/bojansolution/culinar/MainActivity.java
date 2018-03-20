@@ -1,18 +1,28 @@
 package com.example.bojansolution.culinar;
 
 import android.content.Intent;
+import android.nfc.Tag;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ListView;
 
 import com.example.bojansolution.culinar.Adapter.StoreListViewAdapter;
+import com.example.bojansolution.culinar.model.Curtner;
 import com.example.bojansolution.culinar.model.StorePopulation;
+import com.example.bojansolution.culinar.repository.CurtnerRepository;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
@@ -23,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     String[] storeIds;
     String[] storeNames;
     String[] storeStatus;
-    ArrayList<StorePopulation> arrayList = new ArrayList<>();
+    ArrayList<StorePopulation> stores = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,9 +52,9 @@ public class MainActivity extends AppCompatActivity {
         listView = (ListView) findViewById(R.id.listSearchStoreResult);
         for(int i=0;i<10;i++) {
             StorePopulation sp = new StorePopulation(storeIds[i], storeNames[i], storeStatus[i]);
-            arrayList.add(sp);
+            stores.add(sp);
         }
-        adapter = new StoreListViewAdapter(this,arrayList);
+        adapter = new StoreListViewAdapter(this, stores);
         listView.setAdapter(adapter);
 
         editText = (EditText) findViewById(R.id.textSearchStore);
@@ -66,10 +76,19 @@ public class MainActivity extends AppCompatActivity {
                 adapter.filter(text);
             }
         });
+
+        // test
+        test();
     }
 
     public void curtner(View view) {
         Intent intent = new Intent(this, CurtnerMain.class);
         startActivity(intent);
+    }
+
+    private void test() {
+        CurtnerRepository repo = new CurtnerRepository();
+        List<Curtner> curtners = repo.selectAll(adapter);
+        Log.d("curtners", curtners.toString());
     }
 }

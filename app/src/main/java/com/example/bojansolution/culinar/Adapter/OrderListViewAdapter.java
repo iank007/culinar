@@ -66,11 +66,11 @@ public class OrderListViewAdapter extends BaseAdapter {
         convertView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intent = new Intent(context, null);
-//                intent.putExtra("orderId", orderId);
-//                intent.putExtra("orderString", orderString);
-//                intent.putExtra("orderStatus", orderStatus);
-//                context.startActivity(intent);
+                Intent intent = new Intent(context, null);
+                intent.putExtra("orderId", orderId);
+                intent.putExtra("orderString", orderString);
+                intent.putExtra("orderStatus", orderStatus);
+                context.startActivity(intent);
             }
         });
 
