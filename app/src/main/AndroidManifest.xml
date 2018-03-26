@@ -19,6 +19,7 @@
         <activity android:name=".View.SingleItemView" />
         <activity android:name=".View.SummaryView" />
         <activity android:name=".CurtnerMain" />
+        <activity android:name=".login.LoginController" />
     </application>
 
 </manifest>
