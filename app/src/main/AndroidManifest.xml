@@ -20,6 +20,7 @@
         <activity android:name=".View.SummaryView" />
         <activity android:name=".CurtnerMain" />
         <activity android:name=".login.LoginController" />
+        <activity android:name=".customer.CustomerController" />
     </application>
 
 </manifest>

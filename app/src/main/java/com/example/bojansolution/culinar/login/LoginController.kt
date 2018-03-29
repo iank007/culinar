@@ -36,7 +36,7 @@ class LoginController : AppCompatActivity() {
         buttonSubmit.setOnClickListener {
             val userName = editTextUsername.text
             val password = editTextPassword.text
-            Toast.makeText(this, userName, Toast.LENGTH_LONG).show()
+            Toast.makeText(this@LoginController, userName, Toast.LENGTH_LONG).show()
         }
     }
 }

@@ -12,7 +12,7 @@
         android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="vertical"
-        android:background="#444"
+        android:background="@drawable/login_background"
         android:padding="25dp">
         <TextView
             android:layout_width="wrap_content"
@@ -28,7 +28,9 @@
             android:hint="User Name"
             android:textColor="#6bfff7"
             android:textColorHint="#52afaa"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:maxLines="1"
+            android:inputType="text"/>
         <EditText
             android:id="@+id/loginEditTextPassword"
             android:layout_width="match_parent"

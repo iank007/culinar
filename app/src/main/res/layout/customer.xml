@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.bojansolution.culinar.customer.CustomerController">
+
+    <GridView
+        android:id="@+id/customerGridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="auto_fit"
+        android:gravity="center"
+        android:columnWidth="150dp"
+        android:horizontalSpacing="15dp"
+        android:verticalSpacing="15dp"
+        android:stretchMode="columnWidth"/>
+    
+</android.support.constraint.ConstraintLayout>

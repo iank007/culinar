@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <ImageView
+        android:id="@+id/customerImageViewItem"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        app:srcCompat="@drawable/cute_twitter6"/>
+    
+    <TextView
+        android:id="@+id/customerTextViewItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Nasi Padang"
+        android:textSize="20sp"/>
+</LinearLayout>

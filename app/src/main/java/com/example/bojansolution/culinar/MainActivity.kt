@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.Button
 import android.widget.EditText
+import com.example.bojansolution.culinar.customer.CustomerController
 import com.example.bojansolution.culinar.login.LoginController
 
 class MainActivity : AppCompatActivity() {
@@ -13,11 +14,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val button = findViewById(R.id.curtnerBtnId) as Button
-        button.setOnClickListener {
+        val loginButton = findViewById(R.id.curtnerBtnId) as Button
+        loginButton.setOnClickListener {
             val intent = Intent(this, LoginController::class.java)
-            val searchText = findViewById(R.id.textSearchStore) as EditText
-            intent.putExtra("text", searchText.text)
+            startActivity(intent)
+        }
+
+        val customerButton = findViewById(R.id.mainCustomerButton) as Button
+        customerButton.setOnClickListener {
+            val intent = Intent(this, CustomerController::class.java)
             startActivity(intent)
         }
     }
